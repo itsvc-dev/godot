@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>About Godot Engine</title>
- <meta charset="utf-8">
+  <title>Example_Games_Test</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
@@ -11,55 +11,27 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-}
-
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('https://cdn.pic.in.th/file/picinth/002e4c0ba7c3f38016f.png'); /* ใช้ URL ของรูปภาพ */
-  /*background-size: cover;  ปรับขนาดรูปภาพให้ครอบคลุมพื้นที่ */
-  /*background-position: center;  จุดเริ่มต้นที่จะแสดงภาพ */
-  min-height: 450px;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url('https://cdn.pic.in.th/file/picinth/003980714090c90d47a.png'); 
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url('https://cdn.pic.in.th/file/picinth/00404983b7fff1a7b5b.png'); 
-  min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
   }
-}
-</style>
+  
+  footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+  }
+  </style>
 </head>
 <body>
+
+<div class="jumbotron text-center" style="margin-bottom:0; background-color: #778899; background-size: cover; background-position: center;">
+ <h1 style="color: white;">Example_Games_Test</h1>
+  <p style="color: white;">From Godot Engine</p> 
+   <img src="https://cdn.pic.in.th/file/picinth/0122aa03d9ed7a970e4.jpeg" alt="" style="width: 100%; max-width: 600px;">
+</div>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -67,7 +39,7 @@ body, html {
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="https://godot.itsvc.dev/index.html" class="w3-bar-item w3-button">HOME</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> STARTED </a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
@@ -80,189 +52,99 @@ body, html {
   </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+  <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">STARTED </a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
     <a href="https://godotengine.org/" class="w3-bar-item w3-button">Dowload Godot Engine</a>
   </div>
 </div>
 
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>ตัวอย่างเกม 2D</h2>
+      <h5>ภาพตัวอย่างเกม kinematic_character 2D</h5>
+      <div class="jumbotron text-center" style="width:80%; background-image: url('https://cdn.pic.in.th/file/picinth/015.png'); background-size: cover; background-position: center;"></div>
+      <p>เกี่ยวกับเกมKinematic_character 2D<br>ตัวอย่างวิธีสร้างตัวควบคุมตัวละครในแบบ 2D และเคลื่อนที่ตัวละครไปรอบๆ และ ยังสามารถนำแพลตฟอร์มมาประยุกต์และนำมาเป็นแบบในการศึกษา Godot Engine ได้ </p>
+      <h3>เกี่ยวกับตัวอย่างข้างต้น</h3>
+      <p>ช่องทางดาวน์โหลดและเครื่องมือ</p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="https://github.com/godotengine/godot-demo-projects/tree/master/2d/kinematic_character">เกม 2 D</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/godotengine/godot-demo-projects/tree/master/3d/kinematic_character">เกม 3 D</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      <h2>ตัวอย่างเกม 3D</h2>
+      <h5>ภาพตัวอย่างเกม kinematic_character 3D</h5>
+      <div class="jumbotron text-center" style="width:70%; background-image: url('https://cdn.pic.in.th/file/picinth/017.png'); background-size: cover; background-position: center;"></div>
+      <p>เกี่ยวกับตัวอย่างเกม kinematic_character 3D </p>
+      <p>เกมkinematic_character 3D มีความคล้ายคลึงกับเกมเกมkinematic_character 2D แต่จะแตกต่างในด้านการออกแบบและรูปแบบของเกมโดยตัวเกกมจะเป็นรูปแบบ 3D จึงทำให้สามารถเปรียบเทียบความต่างระหว่างระบบ 2D และ 3D ได้อย่างชัดเจน</p>
+      <br>
+
+
+      <h2>วิธีการนำเข้าไฟล์(Import)</h2>
+      <h5>เริ่มต้น ---> เปิดGodot Engine ---> กดนำเข้า(Import) --->ค้นหาไฟล์Godot Engineและให้เข้าไปยังไส้ในของไฟล์ --->ดับเบิ้ลคลิ๊กที่ไฟล์ project.godot ---> กดนำเข้า</h5>
+
+<div class="row">
+  <div class="col-sm-3">
+    <div class="w3-card">
+      <img src="https://cdn.pic.in.th/file/picinth/040.png" style="width:100%">
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="w3-card">
+      <img src="https://cdn.pic.in.th/file/picinth/041.png" style="width:100%">
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="w3-card">
+      <img src="https://cdn.pic.in.th/file/picinth/042.png" style="width:100%">
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="w3-card">
+      <img src="https://cdn.pic.in.th/file/picinth/043.png" style="width:100%">
+    </div>
   </div>
 </div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ProJect</h3>
-  <p class="w3-center"><em>I love creating games and programming.</em></p>
-  <p> Godot Engine เป็นเอ็นจิ้นเกมข้ามแพลตฟอร์มที่อัดแน่นไปด้วยฟีเจอร์เพื่อสร้างเกม 2D และ 3D จากอินเทอร์เฟซแบบรวม มีชุดเครื่องมือทั่วไปที่ครอบคลุม เพื่อให้ผู้ใช้สามารถมุ่งเน้นไปที่การสร้างเกมโดยไม่ต้องคิดค้นวงล้อใหม่ เกมสามารถส่งออกไปยังหลายแพลตฟอร์มได้ด้วยคลิกเดียว รวมถึงแพลตฟอร์มเดสก์ท็อปหลัก (Linux, macOS, Windows), แพลตฟอร์มมือถือ (Android, iOS) รวมถึงแพลตฟอร์มและคอนโซลบนเว็บ</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><a href ="https://docs.godotengine.org/en/stable/getting_started/introduction/index.html"><i class="fa fa-user w3-margin-right"></i></a>Godot Engine</b></p><br>
-      <img src="https://cdn.pic.in.th/file/picinth/002935901622557fe03.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
-    </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>นี่คือรายการบทช่วยสอนและแหล่งข้อมูลของบุคคลที่สามที่สร้างโดยชุมชน Godot สำหรับทรัพยากร โปรดจำไว้ว่ามีห้องสมุด <a href = "https://godotengine.org/asset-library/asset">Godot Asset</a> อย่างเป็นทางการ ซึ่งเต็มไปด้วยแหล่งข้อมูลอย่างเป็นทางการและชุมชนเช่นกัน! ดูรายการใหญ่นี้ที่<a href = "https://www.reddit.com/r/godot/comments/an0iq5/godot_tutorials_list_of_video_and_written/?rdt=47282">Reddit</a></p>
-    </div>
-  </div>
-  <p class="w3-large w3-center w3-padding-16">Im status Website:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:60%">60%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:25%">25%</div>
-  </div>
-</div>
-
-<!-- แถบแสดงสถานะยังไม่ได้ใช้
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">14+</span><br>
-    Partners
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">55+</span><br>
-    Projects Done
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">89+</span><br>
-    Happy Clients
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">150+</span><br>
-    Meetings
-  </div>
-</div>-->
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">STARTED</span>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">การเตรียมตัวก่อนเริ่ม (preparation before starting)</h3>
-  <p class="w3-center"><em>บทความนี้มีไว้เพื่อช่วยให้คุณทราบว่า Godot อาจเหมาะกับคุณหรือไม่.<br> นี่ไม่ใช่ภาพรวมที่ครบถ้วนสมบูรณ์แต่อย่างใด เราจะแนะนำคุณสมบัติพร้อมรูปภาพประกอบโดยคลิ๊กที่รูปภาพเพื่อแสดง</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="https://cdn.pic.in.th/file/picinth/006194fa422603052dd.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Godot คืออะไร ? <br> Godot เป็นเอนจิ้นเกม 2D และ 3D อเนกประสงค์ที่ออกแบบมาเพื่อรองรับโปรเจ็กต์ทุกประเภท คุณสามารถใช้มันเพื่อสร้างเกมหรือแอปพลิเคชันที่คุณสามารถเผยแพร่บนเดสก์ท็อปหรือมือถือ รวมถึงบนเว็บได้และคุณยังสามารถสร้างเกมคอนโซลได้ด้วย แม้ว่าคุณจะต้องมีทักษะการเขียนโปรแกรมที่แข็งแกร่งหรือต้องมีผู้พัฒนาเพื่อพอร์ตเกมให้กับคุณก็ตาม">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://cdn.pic.in.th/file/picinth/010e70c931596d55f19.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="ภาษาโปรแกรม<br>คุณสามารถเขียนโค้ดเกมของคุณโดยใช้GDScriptซึ่งเป็นภาษาเฉพาะของ Godot และบูรณาการอย่างแน่นหนาด้วยไวยากรณ์ที่ไม่ซับซ้อน หรือ C#ซึ่งเป็นที่นิยมในอุตสาหกรรมเกม นี่คือภาษาสคริปต์หลักสองภาษาที่เรารองรับด้วยเทคโนโลยี GDextension คุณยังสามารถเขียนการเล่นเกมหรืออัลกอริธึมประสิทธิภาพสูงใน C หรือ C++ ได้โดยไม่ต้องคอมไพล์เอ็นจิ้นใหม่ คุณสามารถใช้เทคโนโลยีนี้เพื่อรวมไลบรารีของบริษัทอื่นและชุดพัฒนาซอฟต์แวร์ (SDK) อื่นๆ ไว้ในกลไกได้">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://cdn.pic.in.th/file/picinth/023.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://cdn.pic.in.th/file/picinth/025.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="https://cdn.pic.in.th/file/picinth/026.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="โหนด(Node)">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://cdn.pic.in.th/file/picinth/027.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="แถบคุณสมบัติ">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://cdn.pic.in.th/file/picinth/028d4c73601df154e92.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="การตั้งค่าโปรเจค">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://cdn.pic.in.th/file/picinth/029.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="<h3>การนำเข้าไฟล์โปรเจค<br></h3>
-     การนำเข้าไฟล์โปรเจคใน Godot Engine เริ่มต้น ---> เปิดโปรแกรมGodot Engine ---> กดนำเข้า(Import) ---> <br> ---> คุณจะต้องมีไฟล์ที่สร้างมาจากGodot Engine และให้เข้าไปยังไส้ในของไฟล์แล้วสังเกตหาไฟล์ที่ชื่อproject.godotให้ทการดับเบิ้ลคลิ๊กไปที่ไฟล์หลังจากนั้นตัวGodot Engine จะทำการเปิดโปรเจคอัตโนมัต <br> ข้อควรระวัง!<br>ตัวEngineกับตัวไฟล์ที่คุณจัดเตรียมมาเวอร์ชั่นจะต้องตรงกัน<br>คุณควรที่จะศึกษาGodot Eengineหรือข้อมูลที่เกี่ยวข้องจากแหล่งความรู้ที่ทันสมัย"></div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-  </div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'am love your feedback!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="https://cdn.pic.in.th/file/picinth/0031cf77b73c0813734.png" class="w3-image w3-round" style="width:100%">
-    </div>
-
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <a href ="http://www.svc.ac.th/">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i></a>วิทยาลัยอาชีวศึกษาสุราษฎร์ธานี<br>
-        <a href="tel:0828219092">
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i></a> Phone : 082 - 821 - 9020<br>
-        <a href="mailto:64209010001@svc.ac.th">
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email :  64209010001@svc.ac.th<br>
-      </div>
-
-     
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
   </div>
 </div>
 
+<!--<div class="jumbotron text-center" style="margin-bottom:0">-->
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>ไป ยัง ข้างบน</a>
   <div class="w3-xlarge w3-section">
-  <!--  <i class="fa fa-facebook-official w3-hover-opacity" href ="https://www.facebook.com/profile.php?id=100007241232029"></i>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>-->
-  <p>Make by <a href="href ="https://www.facebook.com/profile.php?id=100007241232029"" title="W3.CSS" target="_blank" class="w3-hover-text-green">Krittindmt</a></p>
-    </div>
+ <!-- </div>-->
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p></div>
 </footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
 
-// Change style of navbar on scroll
+
+
+<script>
+
+  // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
@@ -282,7 +164,10 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
 </script>
+
+
 
 </body>
 </html>
