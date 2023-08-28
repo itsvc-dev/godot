@@ -69,7 +69,7 @@ body, html {
       <i class="fa fa-bars"></i>
     </a>
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#home" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> STARTED </a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="https://godotengine.org/" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
@@ -82,10 +82,10 @@ body, html {
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="https://godotengine.org/" class="w3-bar-item w3-button">Dowload Godot Engine</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()"> &nbsp;ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()"> &nbsp;STARTED</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"> &nbsp;CONTACT</a>
+    <a href="https://godotengine.org/" class="w3-bar-item w3-button"> &nbsp;Dowload Godot Engine</a>
   </div>
 </div>
 
@@ -157,14 +157,14 @@ body, html {
 </div>-->
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="portfolio" >
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide">STARTED</span>
   </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
+<div class="w3-content w3-container w3-padding-64" >
   <h3 class="w3-center">การเตรียมตัวก่อนเริ่ม (preparation before starting)</h3>
   <p class="w3-center"><em>บทความนี้มีไว้เพื่อช่วยให้คุณทราบว่า Godot อาจเหมาะกับคุณหรือไม่.<br> นี่ไม่ใช่ภาพรวมที่ครบถ้วนสมบูรณ์แต่อย่างใด เราจะแนะนำคุณสมบัติพร้อมรูปภาพประกอบโดยคลิ๊กที่รูปภาพเพื่อแสดง</em></p><br>
 
@@ -219,14 +219,14 @@ body, html {
 </div>
 
 <!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="contact">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
   </div>
 </div>
 
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
+<div class="w3-content w3-container w3-padding-64" >
   <h3 class="w3-center">WHERE I WORK</h3>
   <p class="w3-center"><em>I'am love your feedback!</em></p>
 
